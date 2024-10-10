@@ -1,32 +1,67 @@
 /* StreamList container */
 .streamlist {
-    text-align: center;
-  }
-  
-  form {
-    display: inline-block;
-    margin-top: 20px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  input {
-    width: 300px;
-    padding: 10px;
-    margin-right: 10px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  button {
-    background-color: #48bb78;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #38a169;
-  }
-  
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #48bb78;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #38a169;
+}
+
+.success-message {
+  color: #48bb78;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.streams {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.streams li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  background-color: #f9f9f9;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 10px 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stream-icon {
+  color: #48bb78;
+}
