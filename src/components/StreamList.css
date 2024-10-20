@@ -52,16 +52,70 @@ button:hover {
 
 .streams li {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
   font-size: 18px;
   background-color: #f9f9f9;
   padding: 10px 15px;
   border-radius: 5px;
   margin: 10px 0;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 }
 
-.stream-icon {
-  color: #48bb78;
+.streams li.completed {
+  background-color: #d1ffd1;
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Style for the action buttons */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.action-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Individual button colors */
+.action-buttons button.complete-btn {
+  background-color: #48bb78; /* Green for complete */
+  color: white;
+}
+
+.action-buttons button.edit-btn {
+  background-color: #ffcc00; /* Yellow for edit */
+  color: white;
+}
+
+.action-buttons button.delete-btn {
+  background-color: #f56565; /* Red for delete */
+  color: white;
+}
+
+/* Hover effects */
+.action-buttons button:hover {
+  transform: scale(1.1);
+}
+
+.action-buttons button.complete-btn:hover {
+  background-color: #38a169;
+}
+
+.action-buttons button.edit-btn:hover {
+  background-color: #e6b800;
+}
+
+.action-buttons button.delete-btn:hover {
+  background-color: #e53e3e;
 }
